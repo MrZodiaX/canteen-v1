@@ -1,0 +1,16 @@
+{% extends "menu/base.html" %}
+
+{% block title %}
+	MENU
+{% endblock %}
+
+{% block body %}
+	<h1>MENU OF MECH-C</h1>
+	<ul>
+		{% for gg in menu %}
+			<li>
+				{{ gg }} <!-- from string function-->
+			</li>
+		{% endfor %}
+	</ul>
+{% endblock %}
